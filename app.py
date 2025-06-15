@@ -39,4 +39,5 @@ if st.session_state.answered:
     if st.button("➡️ 次の問題へ"):
         st.session_state.question_idx = random.randint(0, len(df) - 1)
         st.session_state.answered = False
-        st.experimental_rerun()
+        st.rerun()
+
